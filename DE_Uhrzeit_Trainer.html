@@ -665,6 +665,9 @@ const resultEl = document.getElementById("result");
 const hoursSelect = document.getElementById("hours");
 const minutesSelect = document.getElementById("minutes");
 
+let questionIndex = 0;
+let questionCount = data.length;
+
 // =====================================
 // Часы
 // =====================================
@@ -726,11 +729,15 @@ function toggleText() {
 
 function nextQuestion() {
 
-    const index = Math.floor(Math.random() * data.length);
+    const index = questionIndex;//Math.floor(Math.random() * data.length);
+    if((questionIndex+1) < questionCount){
+        questionIndex ++;
+    }
+
 
     current = data[index];
 
-    wordEl.textContent = "🎧 🎧 Höre das Audio und wähle die Uhrzeit";
+    wordEl.textContent = "🎧 🎧 Höre das Audio und wähle die Uhrzeit ("+(questionIndex)+"/"+(questionCount)+")";
 
     ipaEl.textContent = current.text + ' ' + current.ipa;
 
