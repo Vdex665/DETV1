@@ -728,11 +728,11 @@ function toggleText() {
 // =====================================
 
 function nextQuestion() {
-
-    const index = questionIndex;//Math.floor(Math.random() * data.length);
-    if((questionIndex+1) < questionCount){
+    if((questionIndex+1) <= questionCount){
         questionIndex ++;
     }
+
+    const index = questionIndex-1;//Math.floor(Math.random() * data.length);
 
 
     current = data[index];
