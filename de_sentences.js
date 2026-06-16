@@ -560,7 +560,7 @@ function repeatAudio() {
 
     if (
         document.getElementById("mode").value
-        === "audio"
+        === "audio" || true
     ) {
         speak(current.de, current.audio);
     }
@@ -570,7 +570,7 @@ function repeatAudioWebTTS() {
 
     if (
         document.getElementById("mode").value
-        === "audio"
+        === "audio" || true
     ) {
         speechSynthesis.cancel();
 
