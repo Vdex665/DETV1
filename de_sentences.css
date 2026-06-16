@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.ipa {
+    color: #94a3b8;
+    margin-left: 10px;
+}
+
+.translation {
+    margin-top: 15px;
+    color: #38bdf8;
+}
+
+.examples {
+    margin-top: 12px;
+    padding-left: 10px;
+    border-left: 2px solid #334155;
+}
+
+.example {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #38bdf8;
+    border: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.good {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.bad {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.answer-box {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .word {
+        font-size: 20px;
+    }
+}
