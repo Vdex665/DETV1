@@ -1,5 +1,6 @@
 
 const sentences = JSON.parse(document.getElementById('data').value);
+document.getElementById('data').value = '';
 
 shuffleArray(sentences);
 
